@@ -24,7 +24,8 @@ def isValidUrl(url):
 	if regex.match(url) is not None:
         	return True;
     	return False
-def crawl2(url,title):
+
+def crawl(url):
 	html=requests.get(page).text
 	soup=bs(html)
         for info in soup.findAll('div', class_="post-info"):
@@ -66,5 +67,5 @@ while clist:
 		if l not in clist:
 			clist.append(l['href'])
 	if page not in crawled:
-		crawl2(page,soup.title.string)
+		crawl(page)
 		crawled.append(page)
