@@ -52,7 +52,7 @@ def crawl2(url,title):
 			if under != None:
 				under=under.text
 		date=info.find('div',class_="post-date").text
-#		if flag: func(link1,link,date,under,time.time())
+		if flag: func(link1,link,date,under,time.time())
 
 url="http://www.geeksforgeeks.org"
 clist=[url]
