@@ -36,6 +36,7 @@ def crawl(url):
 				link=posttitle.find('a',rel="bookmark")
 				if link != None:
 					link1=link.text
+					link=link['href']
 				db = MySQLdb.connect("localhost","root","naveen","test")
 				cursor=db.cursor()
 				try:
