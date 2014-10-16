@@ -4,7 +4,7 @@ import re
 from urllib2 import urlopen,urlparse
 import time
 from bs4 import BeautifulSoup as bs
-def func(url,title,doa,fileunder,time):
+def func(title,url,doa,fileunder,time):
 	db = MySQLdb.connect("localhost","root","naveen","test")
 	cursor=db.cursor()
 	try:
