@@ -66,7 +66,7 @@ while clist:
 	soup=bs(html)
 	tags=soup.findAll('a', class_="page larger")
 	for l in tags:
-		if l not in clist:
+		if l not in clist and l not in crawled:
 			clist.append(l['href'])
 	if page not in crawled:
 		crawl(page)
