@@ -4,7 +4,7 @@ import re
 from urllib2 import urlopen,urlparse
 import time
 from bs4 import BeautifulSoup as bs
-def func(url,title,doa,fileunder,time):
+def func(title,url,doa,fileunder,time):
 	db = MySQLdb.connect("localhost","root","naveen","test")
 	cursor=db.cursor()
 	try:
@@ -20,11 +20,13 @@ regex = re.compile(
         r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
         r'(?::\d+)?' # optional port
         r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+
 def isValidUrl(url):
 	if regex.match(url) is not None:
         	return True;
     	return False
-def crawl2(url,title):
+
+def crawl(url):
 	html=requests.get(page).text
 	soup=bs(html)
         for info in soup.findAll('div', class_="post-info"):
@@ -35,6 +37,7 @@ def crawl2(url,title):
 				link=posttitle.find('a',rel="bookmark")
 				if link != None:
 					link1=link.text
+					link=link['href']
 				db = MySQLdb.connect("localhost","root","naveen","test")
 				cursor=db.cursor()
 				try:
@@ -52,7 +55,7 @@ def crawl2(url,title):
 			if under != None:
 				under=under.text
 		date=info.find('div',class_="post-date").text
-#		if flag: func(link1,link,date,under,time.time())
+		if flag: func(link1,link,date,under,time.time())
 
 url="http://www.geeksforgeeks.org"
 clist=[url]
@@ -66,5 +69,5 @@ while clist:
 		if l not in clist:
 			clist.append(l['href'])
 	if page not in crawled:
-		crawl2(page,soup.title.string)
+		crawl(page)
 		crawled.append(page)
