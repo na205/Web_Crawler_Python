@@ -1,0 +1,11 @@
+import MySQLdb
+db = MySQLdb.connect("localhost","root","naveen","test")
+cursor = db.cursor()
+sql = "SELECT * FROM emp where name='hellohai'"
+try:
+   cursor.execute(sql)
+   res=cursor.fetchall()
+   print len(res)
+except:
+   print "Error: unable to fecth data"
+db.close()

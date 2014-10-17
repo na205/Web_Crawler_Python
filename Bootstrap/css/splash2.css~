@@ -1,0 +1,12 @@
+.splash2 {
+	padding:5em 0 2em;
+	background-color:#141d27;
+	color:blue;
+	text-align:center
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}

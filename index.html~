@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootswatch: Free themes for bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+  	<link rel="stylesheet" href="/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="/css/bootswatch.min.css">
+	<script>
+		var _gaq=_gaq || [];
+		_gaq.push(['_setAccount','UA-23019901-1']);
+		_gaq.push(['_setDomainName','bootswatch.com']);
+		_gaq.push(['_setAllowLinker',true]);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true;
+			ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www')+'.google-analytics.com/ga.js';
+			var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,s);
+		});
+	</script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Bootswatch</a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes<span class="caret"></span></a>
+				<ul class="dropdown-menu" area-lebelledby="themes">
+					<li><a href="#">Default</a></li>
+                			<li class="divider"></li>
+                			<li><a href=".#">Cerulean</a></li>
+                			<li><a href="#">Cosmo</a></li>
+                			<li><a href="#">Cyborg</a></li>
+                			<li><a href="#">Darkly</a></li>
+                			<li><a href="#">Flatly</a></li>
+                			<li><a href="#">Journal</a></li>
+                			<li><a href="#">Lumen</a></li>
+                			<li><a href="#">Paper</a></li>
+                			<li><a href="#">Readable</a></li>
+                			<li><a href="#">Sandstone</a></li>
+                			<li><a href="#">Simplex</a></li>
+                			<li><a href="#">Slate</a></li>
+                			<li><a href="#">Spacelab</a></li>
+                			<li><a href="#">Superhero</a></li>
+                			<li><a href="#">United</a></li>
+                			<li><a href="#">Yeti</a></li>
+				</ul>
+				</li>
+				<li>
+					<a href="#">Help</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" target="_blank">Build With Bootstrap</a></li>
+					<li><a href="#" target="_blank">Wrap Bootstrap</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="splash2">
+			<div class="container2">
+				<div class="row2">
+					<div class="col-lg-l22">
+						<div><img class="logo" src="logo.png"></div>
+						<h1>Free Themes for Bootstrap</h1>
+						<div id="social2">
+							<span>
+							<iframe id="gh-fork" src="http://ghbtns.com/github-btn.html?user=thomaspark&repo=bootswatch&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+					                <iframe id="gh-star" src="http://ghbtns.com/github-btn.html?user=thomaspark&repo=bootswatch&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+							</span>
+							<span>
+                					<a href="https://twitter.com/bootswatch" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @bootswatch</a>
+                					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bootswatch.com" data-via="bootswatch">Tweet</a>
+              						</span>
+						</div>
+						<div class="row2">
+							<div class="col-md-6 col-md-offset-3">
+								<div class="sponser2">
+									<a href="#" target="_blank"><img src="shopify.png" alt="Shopify"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-tout2">
+			<div class="container2">
+				<div class="row2">
+					<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-file-o"></i> Easy to Install</h3>
+            					<p>Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
+          				</div>
+          				<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-github"></i> Open Source</h3>
+            					<p>Bootstrap themes are released under the MIT License and maintained by the community on <a target="_blank" href="#">GitHub</a>.</p>
+          				</div>
+          				<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-wrench"></i> Tuned for 3.2.0</h3>
+            					<p>Themes are built for the latest version of Bootstrap. <a href="#">Version 2.3.2</a> and <a target="_blank" href="#">others</a> are also available to download.</p>
+          				</div>
+          				<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-cogs"></i> Modular</h3>
+             					<p>Changes are contained in just two LESS files, enabling modification and ensuring forward compatibility.</p>
+          				</div>
+          				<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-cloud"></i> Get Plugged In</h3>
+            					<p>An <a href="#">API</a> is available for integrating with your platform. In use by <a href="#" target="_blank">NodeBB</a>, <a href="#" target="_blank">BootSnap</a>, and others.</p>
+          				</div>
+          				<div class="col-lg-4 col-sm-6">
+            					<h3><i class="fa fa-bullhorn"></i> Stay Updated</h3>
+            					<p>Be notified about updates by subscribing via <a href="#">RSS feed</a>, <a href="#">email</a>, or <a href="#" onclick="pageTracker._link(this.href); return false;">Tumblr</a>.</p>
+          				</div>
+				</div>
+			</div>
+		</div>
+		<div class="
+	</div>
+</body>
